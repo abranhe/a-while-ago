@@ -1,6 +1,6 @@
 {
   "name": "a-while-ago",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "It happened a while ago",
   "main": "index.js",
   "scripts": {
@@ -12,11 +12,11 @@
     "email": "abraham@abranhe.com",
     "url": "https://abranhe.com"
   },
-  "files": [ 
+  "files": [
     "index.js",
     "index.d.ts"
   ],
-  "keywords": [ 
+  "keywords": [
     "past",
     "happened",
     "a-while-ago",
