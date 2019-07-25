@@ -4,7 +4,7 @@
   "description": "It happened a while ago",
   "main": "index.js",
   "scripts": {
-    "test": "ava & xo"
+    "test": "xo && ava && tsd"
   },
   "repository": "abranhe/a-while-ago",
   "author": {
@@ -13,7 +13,8 @@
     "url": "https://abranhe.com"
   },
   "files": [ 
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "keywords": [ 
     "past",
@@ -29,11 +30,7 @@
   "homepage": "https://p.abranhe.com/a-while-ago",
   "devDependencies": {
     "ava": "^1.4.1",
+    "tsd": "^0.7.3",
     "xo": "^0.24.0"
-  },
-  "xo": {
-    "ignores": [
-      "test.js"
-    ]
   }
 }

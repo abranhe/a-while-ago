@@ -28,7 +28,7 @@ console.log(awa(new Date() - 1000));
 
 ## API
 
-### `awa(date)`
+### awa(date)
 
 - **date**: A past date
 
@@ -42,7 +42,7 @@ awa(new Date() - 60 * 2000);
 // => 2 minutes ago
 ```
 
-### `awa(date, short)`
+### awa(date, short)
 
 - **date**: A past date
 - **short** (`boolean`): A past date
@@ -50,7 +50,7 @@ awa(new Date() - 60 * 2000);
 ###### Example:
 
 ```js
-awa(new Date() - 60 * 2000);
+awa(new Date() - 60 * 2000, true);
 // => 2m
 ```
 
@@ -58,12 +58,26 @@ awa(new Date() - 60 * 2000);
 
 - [minutes-to-read](https://github.com/abranhe/minutes-to-read): How long does it take you to read something.
 
-## Team
+## Todo
 
-|[![](https://api.abranhe.com/avatar?s=50)](https://abranhe.com)|
-| :-: |
-| [Carlos Araham](https://github.com/abranhe) |
+- Support for sufix object instead of a boolean value.
 
+Current:
+
+```js
+awa(new Date() - 60 * 2000, true);
+// => 2m
+```
+
+Desired behavior 
+
+```js
+awa(new Date() - 60 * 2000, { short: true });
+// => 2m
+
+awa(new Date() - 60 * 2000, { short: false });
+// => 2 minutes ago
+```
 
 ## License
 

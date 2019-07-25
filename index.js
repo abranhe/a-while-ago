@@ -14,9 +14,7 @@ let agoSufix = 'ago';
 
 module.exports = (date, short) => {
 	if (short !== undefined && typeof short !== 'boolean') {
-		throw new TypeError(
-			`Expected a Boolean in the second argument, got ${typeof short}`,
-		);
+		throw new TypeError(`Expected a Boolean in the second argument, got ${typeof short}`);
 	}
 
 	const plural = (n, unit) => {
@@ -36,10 +34,7 @@ module.exports = (date, short) => {
 	// eslint-disable-next-line guard-for-in
 	for (const unit in timeUnits) {
 		if (Math.round(timePassed) < timeUnits[unit]) {
-			return plural(
-				Math.round(timePassed / (timeUnits[tmpUnit] || 1)),
-				tmpUnit || 'm',
-			);
+			return plural(Math.round(timePassed / (timeUnits[tmpUnit] || 1)), tmpUnit || 'm');
 		}
 
 		tmpUnit = unit;
